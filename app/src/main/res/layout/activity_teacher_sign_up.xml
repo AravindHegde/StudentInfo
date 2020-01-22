@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8671B1"
+    android:padding="2dp"
+    android:paddingLeft="2dp"
+    android:paddingTop="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="2dp"
+    tools:context=".TeacherSignUp">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        app:srcCompat="@drawable/rit" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Secret Code"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_shape"
+        android:onClick="SignUp"
+        android:text="Signup" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="SignIn"
+        android:text="Already Registered.. Go Back" />
+</RelativeLayout>

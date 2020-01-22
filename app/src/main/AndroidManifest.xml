@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.studentinformation">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".display"></activity>
+        <activity
+            android:name=".TeacherSignUp"
+            android:label="SignUp(Teacher)"
+            android:parentActivityName=".TeacherLogin" />
+        <activity
+            android:name=".Student"
+            android:label="SIS" />
+        <activity
+            android:name=".Teacher"
+            android:label="SIS" />
+        <activity
+            android:name=".StudentSignUp"
+            android:label="SignUp(Student)"
+            android:parentActivityName=".StudentLogin" />
+        <activity
+            android:name=".TeacherLogin"
+            android:label="Login(Teacher)"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StudentLogin"
+            android:label="Login(Student)"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
